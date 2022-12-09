@@ -48,7 +48,7 @@ function Navigation() {
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Switch>
         <Route path="/:coinId">
